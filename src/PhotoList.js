@@ -4,7 +4,6 @@ import Content from './Content.json'
 
 class PhotoList extends Component {
 	render() {
-		console.log(this.props)
 		const category = this.props.match.params.category
 		return (
 			<>
@@ -15,7 +14,7 @@ class PhotoList extends Component {
 								<i className="fas fa-home" /> Home
 							</Link>
 						</li>
-						<li>
+						<li className="hide">
 							<h4>/</h4>
 						</li>
 						<li>
@@ -29,7 +28,7 @@ class PhotoList extends Component {
 				<article>
 					{Content[category].photos.map((photo, index) => {
 						return (
-							<aside>
+							<aside key={photo.title}>
 								<img className="list" src={photo.imageURL} />
 								<Link to={`/${category}/${index}`}>{photo.title}</Link>
 							</aside>

@@ -17,12 +17,12 @@ class PhotoDetail extends Component {
 							</Link>
 						</li>
 						<li>
-							<h4>/</h4>
+							<h4 className="hide">/</h4>
 						</li>
 						<li>
 							<Link to={`/${category}`}>{Content[category].title}</Link>
 						</li>
-						<li>
+						<li className="hide">
 							<h4>/</h4>
 						</li>
 						<li>

@@ -18,7 +18,7 @@ class CategoryList extends Component {
 				<main>
 					{Object.keys(Content).map(category => {
 						return (
-							<aside>
+							<aside key={Content[category].photos[0].title}>
 								<section>
 									<h3>
 										<Link to={`/${category}`}>{Content[category].title}</Link>

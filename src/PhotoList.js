@@ -11,7 +11,9 @@ class PhotoList extends Component {
 				<nav>
 					<ul>
 						<li>
-							<Link to="/">★ Home</Link>
+							<Link to="/">
+								<i className="fas fa-home" /> Home
+							</Link>
 						</li>
 						<li>
 							<h4>/</h4>
@@ -21,18 +23,19 @@ class PhotoList extends Component {
 						</li>
 					</ul>
 				</nav>
-				<section>
-					<h1>{Content[category].title}</h1>
-					<h2>{Content[category].description}</h2>
+
+				<h1>{Content[category].title}</h1>
+				<h2>{Content[category].description}</h2>
+				<article>
 					{Content[category].photos.map((photo, index) => {
 						return (
-							<article>
-								<img src={photo.imageURL} />
+							<aside>
+								<img className="list" src={photo.imageURL} />
 								<Link to={`/${category}/${index}`}>{photo.title}</Link>
-							</article>
+							</aside>
 						)
 					})}
-				</section>
+				</article>
 			</>
 		)
 	}

@@ -9,7 +9,9 @@ class CategoryList extends Component {
 				<nav>
 					<ul>
 						<li>
-							<h4>★ Home</h4>
+							<h4>
+								<i className="fas fa-home" /> Home
+							</h4>
 						</li>
 					</ul>
 				</nav>
@@ -17,10 +19,12 @@ class CategoryList extends Component {
 					{Object.keys(Content).map(category => {
 						return (
 							<aside>
-								<h3>
-									<Link to={`/${category}`}>{Content[category].title}</Link>
-								</h3>
-								<p>{Content[category].description}</p>
+								<section>
+									<h3>
+										<Link to={`/${category}`}>{Content[category].title}</Link>
+									</h3>
+									<p>{Content[category].description}</p>
+								</section>
 								<img src={Content[category].photos[0].imageURL} />
 							</aside>
 						)

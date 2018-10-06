@@ -12,7 +12,9 @@ class PhotoDetail extends Component {
 				<nav>
 					<ul>
 						<li>
-							<Link to="/">★ Home</Link>
+							<Link to="/">
+								<i className="fas fa-home" /> Home
+							</Link>
 						</li>
 						<li>
 							<h4>/</h4>
@@ -28,11 +30,14 @@ class PhotoDetail extends Component {
 						</li>
 					</ul>
 				</nav>
-				<article>
-					<h1>{Content[category].photos[index].title}</h1>
-					<img src={Content[category].photos[index].imageURL} />
+				<section className="pic">
+					<h1 className="title">{Content[category].photos[index].title}</h1>
+					<img
+						className="detailpic"
+						src={Content[category].photos[index].imageURL}
+					/>
 					<a href={Content[category].photos[index].sourceURL}>Source</a>
-				</article>
+				</section>
 			</>
 		)
 	}

@@ -9,16 +9,18 @@ class App extends Component {
 			<Router>
 				<>
 					<header>
-						<h1>Things I Like</h1>
+						<Link to="/">
+							<h1>Things I Like</h1>
+						</Link>
 						<h3>A Photo Gallery by Justin Lee</h3>
 					</header>
-					<section>
+					<>
 						<Switch>
 							<Route exact path="/" component={CategoryList} />
 							<Route exact path="/:category" component={PhotoList} />
 							<Route path="/:category/:index" component={PhotoDetail} />
 						</Switch>
-					</section>
+					</>
 				</>
 			</Router>
 		)

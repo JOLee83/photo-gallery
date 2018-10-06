@@ -1,28 +1,28 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { Component } from 'react'
+import CategoryList from './CategoryList'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import PhotoList from './PhotoList'
+import PhotoDetail from './PhotoDetail'
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+	render() {
+		return (
+			<Router>
+				<>
+					<header>
+						<h1>Things I Like</h1>
+						<h3>A Photo Gallery by Justin Lee</h3>
+					</header>
+					<section>
+						<Switch>
+							<Route exact path="/" component={CategoryList} />
+							<Route exact path="/:category" component={PhotoList} />
+							<Route path="/:category/:index" component={PhotoDetail} />
+						</Switch>
+					</section>
+				</>
+			</Router>
+		)
+	}
 }
 
-export default App;
+export default App

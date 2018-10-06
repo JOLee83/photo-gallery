@@ -1,0 +1,34 @@
+{
+	"spiderman": {
+		"title": "Spider-Man",
+		"description": "Spider-Man is a fictional superhero created by writer-editor Stan Lee and writer-artist Steve Ditko. He first appeared in the anthology comic book Amazing Fantasy #15 (August 1962) in the Silver Age of Comic Books.",
+		"photos": [
+			{
+				"title": "Cover of Web of Spider-Man #129.1 (Oct. 2012)",
+				"imageURL": "https://upload.wikimedia.org/wikipedia/en/2/21/Web_of_Spider-Man_Vol_1_129-1.png",
+				"sourceURL": "https://en.wikipedia.org/wiki/Spider-Man"
+			},
+			{
+				"title": "Amazing Fantasy #15 (August 1962)",
+				"imageURL": "https://upload.wikimedia.org/wikipedia/en/3/35/Amazing_Fantasy_15.jpg",
+				"sourceURL": "https://en.wikipedia.org/wiki/Spider-Man"
+			}
+		]
+	},
+	"batman": {
+		"title": "Batman",
+		"description": "Batman is a fictional superhero appearing in American comic books published by DC Comics. The character was created by artist Bob Kane and writer Bill Finger, and first appeared in Detective Comics #27, in 1939.",
+		"photos": [
+			{
+				"title": "Batman, art by Mikel Janin",
+				"imageURL": "https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png",
+				"sourceURL": "https://en.wikipedia.org/wiki/Batman"
+			},
+			{
+				"title": "Detective Comics #27 (May 1939)",
+				"imageURL": "https://upload.wikimedia.org/wikipedia/en/a/a8/Detective_Comics_27.jpg",
+				"sourceURL": "https://en.wikipedia.org/wiki/Batman"
+			}
+		]
+	}
+}
